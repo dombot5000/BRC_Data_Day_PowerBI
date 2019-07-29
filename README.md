@@ -75,10 +75,17 @@ d) *TreesMeasure 3 = IFERROR([Population]/[No. Trees], BLANK())*
 
 ## 6. Getting Creative ##
 
- - Try out a TreeMap
- - Create a chart and export the data
- - Conditional formatting
+ Now time to create your own customised output
+ 
+ - Add slicers
+ - Create a chart
+ - Create additional tabs
+ - Export data from a table or chart
+ - Use conditional formatting on a table
  - Create a basic map
+ - Create a Shapemap (use this file - Local_Authority_Districts_December_2018_Boundaries_GB_BFE.json)
+ - Create a Treemap
+ - Change the theme
 
 
 
