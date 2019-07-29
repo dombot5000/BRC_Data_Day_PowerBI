@@ -4,30 +4,30 @@ Instructions for British Red Cross Data Day @ CUSP London
 
 ## 1. Introducing PowerBI ##
 
-#### Open PowerBI ####
+
+#### a) Open PowerBI ####
 If you have not downloaded go to <https://powerbi.microsoft.com/en-us/downloads/>
 
 
-#### Explore the views ####
+#### b) Explore the views ####
 Report, Data and Relationships
 
 
-#### Explore data connection options ####
+#### c) Explore data connection options ####
+
 
 **Home > Get Data > More > Web**
 
-Enter URL <https://en.wikipedia.org/wiki/List_of_highest_mountains_on_Earth>
 
-**Edit Queries**
+d) Enter URL <https://en.wikipedia.org/wiki/List_of_highest_mountains_on_Earth> and load
 
-Select **Height m** column
 
-**Transform** and change from **Text** to **Whole Number**
+e) **Edit Queries** and select **Height m** column
 
-**Close and Apply**
 
-Make a quick chart and map - well done!!! You're off to a great start
+f) **Transform** and change from **Text** to **Whole Number** then **Close and Apply**
 
+g) Make a chart and map 
 
 
 ## 2. Loading data ##
@@ -38,8 +38,13 @@ Make a quick chart and map - well done!!! You're off to a great start
 
 ## 4. Creating measures ##
 
-No. Trees = COUNTROWS(FactTrees)
+In *FactTrees* click *...* and select *New Measure* then enter *No. Trees = COUNTROWS(FactTrees)*
+In *FactBoroughPop* click *...* and select *New Measure* then enter *Population = SUM(FactBoroughPop[All usual residents])*
+In *FactBoroughPop* click *...* and select *New Measure* then enter *Trees Per Person = [Population]/[No. Trees]*
 
+Let's see what that looks like in a table - uh-oh we have an infinity problem - lets edit our *Trees Per Person* measure
+
+*TreesMeasure 3 = IFERROR([Population]/[No. Trees], BLANK())*
 
 ## 5. Exploring geography ##
 
