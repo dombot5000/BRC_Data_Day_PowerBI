@@ -2,7 +2,7 @@
 Instructions for British Red Cross Data Day @ CUSP London
 
 
-## Introducing PowerBI ##
+## 1. Introducing PowerBI ##
 
 #### Open PowerBI ####
 If you have not downloaded go to <https://powerbi.microsoft.com/en-us/downloads/>
@@ -10,9 +10,31 @@ If you have not downloaded go to <https://powerbi.microsoft.com/en-us/downloads/
 #### Explore the views ####
 Report, Data and Relationships
 
-![nicepic] (BRC_Data_Day_PowerBI/images/Views.PNG)
-
 #### Explore the data connection options ####
-Home > Get Data > More
+
+**Home > Get Data > More > Web**
+
+Enter URL <https://en.wikipedia.org/wiki/List_of_highest_mountains_on_Earth>
+
+**Edit Queries**
+
+Select **Height m** column
+
+**Transform** and change from **Text** to **Whole Number**
+
+## 2. Loading data ##
+
+
+## 3. Tidying up our model ##
+
+
+## 4. Creating measures ##
+
+No. Trees = COUNTROWS(FactTrees)
+
+
+## 5. Exploring geography ##
+
+
 
 
