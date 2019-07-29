@@ -39,8 +39,13 @@ g) Make a chart and map
 ## 4. Creating measures ##
 
 In *FactTrees* click *...* and select *New Measure* then enter *No. Trees = COUNTROWS(FactTrees)*
+
+
 In *FactBoroughPop* click *...* and select *New Measure* then enter *Population = SUM(FactBoroughPop[All usual residents])*
+
+
 In *FactBoroughPop* click *...* and select *New Measure* then enter *Trees Per Person = [Population]/[No. Trees]*
+
 
 Let's see what that looks like in a table - uh-oh we have an infinity problem - lets edit our *Trees Per Person* measure
 
