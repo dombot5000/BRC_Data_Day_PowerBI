@@ -35,8 +35,13 @@ h) Think about the strengths and weaknesses of this approach
 ## 2. Loading data for main exercise ##
 
 
+a) Download *TreesCube.xlsx*
+
+b) *Home* > *Get Data* > *Excel*
+
 
 ## 3. Tidying up our model ##
+
 
 a) Hide columns the end user doesnt need to see
 
@@ -47,10 +52,12 @@ Look ok?
 
 ## 4. Exploring Visualisations ##
 
+
 Look at the options and explore Custom Visualisations
 
 
-## 4. Creating measures ##
+## 5. Creating measures ##
+
 
 a) In *FactTrees* click *...* and select *New Measure* then enter *No. Trees = COUNTROWS(FactTrees)*
 
@@ -65,8 +72,13 @@ Let's see what that looks like in a table - uh-oh we have an infinity problem - 
 
 d) *TreesMeasure 3 = IFERROR([Population]/[No. Trees], BLANK())*
 
-## 5. Exploring geography ##
 
+## 6. Getting Creative ##
+
+ - Try out a TreeMap
+ - Create a chart and export the data
+ - Conditional formatting
+ - Create a basic map
 
 
 
